@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaming Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎮 Gaming Hub</h1>
+    <p>Play Simple Web Games</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Games</a>
+    <a href="#">Leaderboard</a>
+</nav>
+
+<section class="games">
+    <div class="game-card">
+        <h2>Click Game</h2>
+        <p>Click as fast as you can in 10 seconds!</p>
+        <button onclick="startGame()">Play</button>
+    </div>
+</section>
+
+<section class="game-area">
+    <h2 id="status">Click Start to Play</h2>
+    <button id="clickBtn" onclick="increaseScore()" disabled>Click Me!</button>
+    <h3>Score: <span id="score">0</span></h3>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
